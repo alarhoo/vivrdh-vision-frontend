@@ -1,0 +1,33 @@
+.container {
+  padding: 0 2rem;
+}
+
+.wrapper {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.blockquote {
+  padding: 60px 25px 0px;
+  position: relative;
+}
+
+.blockquote p {
+  /* font-family: 'Utopia-italic'; */
+  text-align: center;
+}
+
+.blockquote::after {
+  content: '';
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 3px;
+  width: 200px;
+}
