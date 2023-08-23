@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/1d8aa3902ed39929de0912f0ff2bb89f?family=Centra+No2+Bold'); */
+
+@font-face {
+  font-family: 'PWC-Medium';
+  src: url('../../public/styles/fonts/PWCentraNo2-Medium.woff2') format('woff2');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'PWC-Bold';
+  src: url('../../public/styles/fonts/PWCentraNo2-Bold.woff2') format('woff2');
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'PWC-Medium', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo,
+.logo-color {
+  color: #001d6b;
+}
+
+.wrapper {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-container {
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  /* height: 100vh; */
+  /* scroll-snap-type: y mandatory; */
+}
+
+.scroll-sections {
+  height: 100vh;
+  scroll-snap-align: start; /* Snap at the start of each section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #f0f0f0;
+}
+
+.body::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+
+.no-show {
+  /* opacity: 0;
+  transform: translateX(-50%); */
+  /* transition: all 1s; */
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .no-show {
+    transition: none;
+  }
 }
