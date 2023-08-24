@@ -12,6 +12,8 @@ export const metadata = {
   description: 'Projects developed by Vision Creations',
 };
 
+export const revalidate = 3600;
+
 const Project = async ({ params }) => {
   const slug = params.slug;
   const response = await fetchAPI(`/projects/${slug[0]}?populate=*`);
@@ -74,14 +76,15 @@ const Project = async ({ params }) => {
           </div>
           {link && (
             <article className='youtube-section max-w-[90%] mx-auto'>
-              <iframe
-                className='mx-auto'
-                width='560'
-                height='315'
-                src={`https://www.youtube.com/embed/${link}`}
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowFullScreen
-              ></iframe>
+              <div className='embed-responsive embed-responsive-16by9 relative w-full overflow-hidden'>
+                <iframe
+                  className='embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full'
+                  src={`https://www.youtube.com/embed/${link}`}
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  data-gtm-yt-inspected-2340190_699='true'
+                  allowFullScreen
+                ></iframe>
+              </div>
             </article>
           )}
           {project.gallery.data ? (
