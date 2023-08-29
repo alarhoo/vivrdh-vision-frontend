@@ -75,8 +75,8 @@ const Project = async ({ params }) => {
             </article>
           </div>
           {link && (
-            <article className='youtube-section max-w-[90%] mx-auto'>
-              <div className='embed-responsive embed-responsive-16by9 relative w-full overflow-hidden'>
+            <article className='youtube-section max-w-[90%] md:max-w-[70%] mx-auto'>
+              <div className='embed-responsive embed-responsive-16by9 relative w-full overflow-hidden pt-[57%]'>
                 <iframe
                   className='embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full'
                   src={`https://www.youtube.com/embed/${link}`}

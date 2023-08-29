@@ -146,7 +146,7 @@ const Header = () => {
             className='navbar-nav mr-auto lg:flex lg:flex-row w-full justify-end text-right px-5 pb-5 logo'
             data-te-navbar-nav-ref
           >
-            <li className='nav-item' data-te-nav-item-ref>
+            <li className='nav-item' data-te-nav-item-ref data-te-offcanvas-dismiss>
               <Link
                 className='nav-link block pr-2 lg:px-2 py-2 text-base font-semibold text-whites hover:underline hover:underline-offset-4'
                 href='/projects'
@@ -156,7 +156,7 @@ const Header = () => {
                 projects
               </Link>
             </li>
-            <li className='nav-item' data-te-nav-item-ref>
+            <li className='nav-item' data-te-nav-item-ref data-te-offcanvas-dismiss>
               <Link
                 className='nav-link block pr-2 lg:px-2 py-2 text-base font-semibold text-whites hover:underline hover:underline-offset-4'
                 href='/services'
@@ -166,7 +166,7 @@ const Header = () => {
                 services
               </Link>
             </li>
-            <li className='nav-item' data-te-nav-item-ref>
+            <li className='nav-item' data-te-nav-item-ref data-te-offcanvas-dismiss>
               <Link
                 className='nav-link block pr-2 lg:px-2 py-2 text-base font-semibold text-whites hover:underline hover:underline-offset-4'
                 href='/contact'
@@ -176,7 +176,7 @@ const Header = () => {
                 contact
               </Link>
             </li>
-            <li className='nav-item' data-te-nav-item-ref>
+            <li className='nav-item' data-te-nav-item-ref data-te-offcanvas-dismiss>
               <Link
                 className='nav-link block pr-2 lg:px-2 py-2 text-base font-semibold text-whites hover:underline hover:underline-offset-4'
                 href='/careers'
@@ -186,7 +186,7 @@ const Header = () => {
                 careers
               </Link>
             </li>
-            <li className='nav-item' data-te-nav-item-ref>
+            <li className='nav-item' data-te-nav-item-ref data-te-offcanvas-dismiss>
               <Link
                 className='nav-link block pr-2 lg:px-2 py-2 text-base font-semibold text-whites hover:underline hover:underline-offset-4'
                 href='/about'
