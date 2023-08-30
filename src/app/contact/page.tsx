@@ -16,7 +16,7 @@ const ContactPage = () => {
           <div className='content relative w-full h-48 md:h-screen'>
             <Image
               className='object-cover'
-              src='/images/contact-us-unsplash.jpg'
+              src='/images/contact-us-unsplash.webp'
               alt='contact-us'
               fill
               priority={false}

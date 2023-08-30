@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const CareerPage = () => {
   return (
     <main>
-      <Banner src={'/images/careers-banner.jpg'} wrapperClass='grayscales mb-4'></Banner>
+      <Banner src={'/images/careers-banner.webp'} wrapperClass='grayscales mb-4'></Banner>
       <div className='mt-24 mb-16'>
         <Heading variant={'h1'} wrapperClass='text-center mb-0'>
           Work with us.
@@ -34,18 +34,19 @@ const CareerPage = () => {
           header='Join us'
           subheader='Come design a better, more beautiful world with us.'
           image={{
-            src: `/images/careers.jpg`,
+            src: `/images/careers.webp`,
             alt: `project.gallery`,
             width: '500',
             height: '450',
           }}
           direction='start'
           wrapperClass='my-12'
+          priority={false}
         >
           <p className='text-green-600s'>
-            Come create a world that restores, nurtures, and protects life on our planet through sustainability,
-            resilience, diversity, inclusion, well-being, and programs that give back to our communities. Be part of
-            some of something bigger.
+            Elevate environments with expertise: Collaborate with our architecture and interior design firm to craft
+            inspiring spaces that fuse aesthetics and functionality. Unleash your creativity in a dynamic team committed
+            to shaping the future of design.
           </p>
         </ImageBlock>
       </div>

@@ -19,7 +19,7 @@ const HowWeWork = () => {
           </Heading>
         </div>
         <div className='w-4/5 mx-auto'>
-          <div className='containers md:w-1/2 my-10'>
+          <div className='md:w-1/2 my-10'>
             <Heading variant={'h3'} wrapperClass='mb-0' div>
               01
             </Heading>
@@ -36,10 +36,12 @@ const HowWeWork = () => {
             </p>
           </div>
           <div
-            className='containers md:w-1/2 my-10 text-right md:ml-[50%]'
+            className='md:w-1/2 my-10 text-right md:ml-[50%]'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation='[fade-in_1s_ease-in-out]'
+            data-te-animation-on-scroll='repeat'
+            data-te-animation-reset='true'
           >
             <Heading variant={'h3'} wrapperClass='mb-0' div>
               02
@@ -56,10 +58,12 @@ const HowWeWork = () => {
             </p>
           </div>
           <div
-            className='containers md:w-1/2 my-10'
+            className='md:w-1/2 my-10'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation='[fade-in_1s_ease-in-out]'
+            data-te-animation-on-scroll='repeat'
+            data-te-animation-reset='true'
           >
             <Heading variant={'h3'} wrapperClass='mb-0' div>
               03
@@ -76,10 +80,12 @@ const HowWeWork = () => {
             </p>
           </div>
           <div
-            className='containers md:w-1/2 my-10 text-right md:ml-[50%]'
+            className='md:w-1/2 my-10 text-right md:ml-[50%]'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation='[fade-in_1s_ease-in-out]'
+            data-te-animation-on-scroll='repeat'
+            data-te-animation-reset='true'
           >
             <Heading variant={'h3'} wrapperClass='mb-0' div>
               04
@@ -99,10 +105,12 @@ const HowWeWork = () => {
             </p>
           </div>
           <div
-            className='containers md:w-1/2 my-10'
+            className='md:w-1/2 my-10'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation='[fade-in_1s_ease-in-out]'
+            data-te-animation-on-scroll='repeat'
+            data-te-animation-reset='true'
           >
             <Heading variant={'h3'} wrapperClass='mb-0' div>
               05

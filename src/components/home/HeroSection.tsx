@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section>
       <Link href='/projects'>
         <Banner
-          src={'/images/hero-banner.jpg'}
+          src={'/images/hero-banner.webp'}
           fullscreen
           wrapperClass='h-screen transition-all duration-300 filter grayscale-0 hover:grayscale-0 mb-4'
         ></Banner>

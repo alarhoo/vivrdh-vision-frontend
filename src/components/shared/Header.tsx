@@ -7,8 +7,8 @@ import { CgMenuRight } from 'react-icons/cg';
 const Header = () => {
   useEffect(() => {
     const init = async () => {
-      const { Offcanvas, Animate, Carousel, initTE } = await import('tw-elements');
-      initTE({ Offcanvas, Animate, Carousel });
+      const { Offcanvas, Animate, Carousel, SmoothScroll, initTE } = await import('tw-elements');
+      initTE({ Offcanvas, Animate, Carousel, SmoothScroll });
     };
     init();
   }, []);

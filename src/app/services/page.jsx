@@ -19,7 +19,7 @@ const ServicesPage = () => {
         </Heading>
         <div className='md:w-4/5 mx-auto'>
           <div
-            className='container md:w-1/2 my-10'
+            className='md:w-1/2 my-10'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation-on-scroll='repeat'
@@ -37,7 +37,7 @@ const ServicesPage = () => {
             </div>
           </div>
           <div
-            className='container md:w-1/2 my-10 text-right md:ml-[50%]'
+            className='md:w-1/2 my-10 text-right md:ml-[50%]'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation-on-scroll='repeat'
@@ -55,7 +55,7 @@ const ServicesPage = () => {
             </div>
           </div>
           <div
-            className='container md:w-1/2 my-10'
+            className='md:w-1/2 my-10'
             data-te-animation-init
             data-te-animation-start='onScroll'
             data-te-animation-on-scroll='repeat'

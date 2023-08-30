@@ -3,6 +3,7 @@ import Header from '@/components/shared/Header';
 import Footer from '@/components/shared/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import ProgressBar from '@/components/ProgressBar';
+import NextTopLoader from 'nextjs-toploader';
 import 'tw-elements/dist/css/tw-elements.min.css';
 import './globals.css';
 
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body>
-        <ProgressBar />
+      <body id='page'>
+        <NextTopLoader />
         <Header />
         {children}
         <Footer />
