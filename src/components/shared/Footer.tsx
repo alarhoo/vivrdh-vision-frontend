@@ -13,9 +13,9 @@ const Footer = () => {
       google: 'https://www.google.com/search?q=vision+creations+bangalore&oq=vision+creations',
     },
     contact: {
-      address: 'Jayanagara, Bengaluru - 560 011',
+      address: `582, Ground Floor, 20th Main, 20th Cross, Sahakaranagar, A Block, Bangalore 560092`,
       email: 'anilkatare@gmail.com',
-      phone: '+91 98802 93080',
+      phone: '+91 9880293080',
     },
     main: {
       title: 'VISION CREATIONS',
