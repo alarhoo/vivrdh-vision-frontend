@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
+import Image from 'next/image';
 
 const Header = () => {
   const [color, setColor] = useState('transparent');
@@ -197,9 +198,10 @@ const Header = () => {
       >
         <div className='w-[inherit] mx-auto flex flex-wrap items-center justify-between p-3'>
           <Link href='/'>
-            <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
+            {/* <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
               VISION
-            </h1>
+            </h1> */}
+            <Image src='/images/logo.jpg' width={230} height={45} alt='Vision Logo' priority={true} />
           </Link>
           <button
             type='button'
@@ -211,7 +213,7 @@ const Header = () => {
             data-te-ripple-color='light'
             className='lg:hidden'
           >
-            <CgMenuRight />
+            <CgMenuRight size={20} color='#9b9b9b' />
           </button>
 
           <div
