@@ -29,18 +29,18 @@ const Project = async ({ params }) => {
           wrapperClass='transition-all duration-300 filter grayscale-0 hover:grayscale-0 mb-0'
         ></Banner>
         <article className='project-details bg-gray-100'>
-          <div className='flex items-center justify-between container mx-auto'>
-            <div className='p-5'>
+          <div className='flex items-center justify-around container mx-auto'>
+            <div className='p-3 md:p-5'>
               <div className='header font-bold'>Project Type</div>
               <div className='subheader'>{project.type}</div>
             </div>
-            <div className='p-5'>
+            <div className='p-3 md:p-5'>
               <div className='header font-bold'>Measurement</div>
               <div className='subheader'>
                 {project.dimension.toLocaleString('en')} {project.dimension_unit}
               </div>
             </div>
-            <div className='p-5'>
+            <div className='p-3 md:p-5'>
               <div className='header font-bold'>Status</div>
               <div className='subheader'>{project.status}</div>
             </div>
