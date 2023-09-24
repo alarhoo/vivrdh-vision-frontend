@@ -14,6 +14,10 @@
   font-family: 'PWC-Bold';
   src: url('../../public/styles/fonts/PWCentraNo2-Bold.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'BankGothic-Medium';
+  src: url('../../public/styles/fonts/Bank_Gothic_Medium.otf') format('opentype');
+}
 
 body {
   font-family: 'PWC-Medium', sans-serif;
@@ -69,4 +73,20 @@ html {
   .no-show {
     transition: none;
   }
+}
+
+/* NEW CSS */
+.custom-img {
+  background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjaGl0ZWN0dXJlJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60');
+}
+
+.logo-text {
+  font-family: 'BankGothic-Medium', sans-serif;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
 }

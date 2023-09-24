@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "src/components/Banner.jsx",
     "src/app/page.tsx"
-  ],
+, "src/components/shared/Carousel.jsx"  ],
   "exclude": ["node_modules"]
 }

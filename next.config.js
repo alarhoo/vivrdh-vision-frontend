@@ -11,7 +11,7 @@ const nextConfig = withPWA({
   reactStrictMode: true,
   images: {
     loader: 'default',
-    domains: ['localhost', 'vision-creations-vmgfq.ondigitalocean.app', 'mdbcdn.b-cdn.net'],
+    domains: ['localhost', 'vision-creations-vmgfq.ondigitalocean.app', 'mdbcdn.b-cdn.net', 'images.unsplash.com'],
   },
   swcMinify: true,
   sassOptions: {

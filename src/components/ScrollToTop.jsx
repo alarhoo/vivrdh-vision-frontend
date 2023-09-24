@@ -26,7 +26,7 @@ const ScrollToTop = () => {
         id='btn-back-to-top'
         href='#page'
         data-te-smooth-scroll-init
-        class='!fixed bottom-5 right-5 hidden rounded-full bg-gray-600 p-2 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-gray-700 hover:shadow-lg focus:gray-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg'
+        className='!fixed bottom-5 right-5 hidden rounded-full bg-gray-600 p-2 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-gray-700 hover:shadow-lg focus:gray-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg'
       >
         <svg
           aria-hidden='true'

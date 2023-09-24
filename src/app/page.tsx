@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from '@/components/home/HeroSection';
+import AboutSection from '@/components/home/AboutSection';
 import VisionSection from '@/components/home/VisionSection';
 import HowWeWorkSection from '@/components/home/HowWeWorkSection';
 import ProjectSection from '@/components/home/ProjectSection';
@@ -13,10 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const heading = 'Crafting Spaces that Inspire';
+  const message = 'At Vision Creations, we redefine spaces, turning them into works of art that inspire, captivate, and leave lasting impressions.';
+  const cta = 'View Projects';
+
   return (
     <main>
-      <HeroSection />
-      <VisionSection />
+      <HeroSection heading={heading} message={message} cta={cta} />
+      <AboutSection />
       <HowWeWorkSection />
       <ProjectSection />
       <TestimonialSection />
