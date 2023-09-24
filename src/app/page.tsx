@@ -5,6 +5,7 @@ import VisionSection from '@/components/home/VisionSection';
 import HowWeWorkSection from '@/components/home/HowWeWorkSection';
 import ProjectSection from '@/components/home/ProjectSection';
 import TestimonialSection from '@/components/home/TestimonialSection';
+import SubscribeSection from '@/components/home/SubscribeSection';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const heading = 'Crafting Spaces that Inspire';
-  const message = 'At Vision Creations, we redefine spaces, turning them into works of art that inspire, captivate, and leave lasting impressions.';
+  const message =
+    'At Vision Creations, we redefine spaces, turning them into works of art that inspire, captivate, and leave lasting impressions.';
   const cta = 'View Projects';
 
   return (
@@ -25,6 +27,7 @@ export default function Home() {
       <HowWeWorkSection />
       <ProjectSection />
       <TestimonialSection />
+      <SubscribeSection />
     </main>
   );
 }

@@ -12,13 +12,15 @@ const ProjectsPage = async () => {
   const projects = await getData();
 
   return (
-    <main className='w-11/12 mx-auto my-12'>
-      <div className='w-10/12 md:w-full mx-auto'>
-        <Heading variant={'h1'} wrapperClass='text-left '>
-          Our Projects
-        </Heading>
-        <Projects data={projects} />
-      </div>
+    <main className='relativez'>
+      <section className='container mx-auto'>
+        <div className='my-36'>
+          <h1 className='logo-text text-4xl uppercase tracking-widest mb-3'>
+            Our <span className='logo-color'>Projects</span>{' '}
+          </h1>
+          <Projects data={projects} />
+        </div>
+      </section>
     </main>
   );
 };

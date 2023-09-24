@@ -2,16 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* --brand-color: #002757; */
+  --brand-color: #b19777;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/1d8aa3902ed39929de0912f0ff2bb89f?family=Centra+No2+Bold'); */
 
 @font-face {
-  font-family: 'PWC-Medium';
+  font-family: 'Vision-Medium';
   src: url('../../public/styles/fonts/PWCentraNo2-Medium.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'PWC-Bold';
+  font-family: 'Vision-Bold';
   src: url('../../public/styles/fonts/PWCentraNo2-Bold.woff2') format('woff2');
 }
 @font-face {
@@ -19,17 +26,41 @@
   src: url('../../public/styles/fonts/Bank_Gothic_Medium.otf') format('opentype');
 }
 
+.brand-color {
+  color: var(--brand-color);
+}
+
 body {
-  font-family: 'PWC-Medium', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-family: 'Didact Gothic', sans-serif; */
+  font-family: 'Vision-Medium', sans-serif;
+  font-size: 16px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.logo,
+header {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* p {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #777;
+  margin-bottom: 20px;
+} */
+
 .logo-color {
-  color: #001d6b;
+  color: var(--brand-color);
+}
+
+.logo-bg-color {
+  background-color: var(--brand-color);
 }
 
 .wrapper {
@@ -58,15 +89,38 @@ html {
   width: 0px; /* Width of the scrollbar */
 }
 
-.no-show {
-  /* opacity: 0;
-  transform: translateX(-50%); */
-  /* transition: all 1s; */
-}
-
 .show {
   opacity: 1;
   transform: translateX(0);
+}
+.content-wrapper {
+  position: relative;
+}
+.content-lines-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content-lines-inner {
+  position: absolute;
+  width: 1140px;
+  left: 50%;
+  margin-left: -570px;
+  top: 0;
+  height: 100%;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+.content-lines {
+  position: absolute;
+  left: 33.666666%;
+  right: 33.666666%;
+  height: 100%;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
 }
 
 @media (prefers-reduced-motion) {
@@ -77,11 +131,14 @@ html {
 
 /* NEW CSS */
 .custom-img {
-  background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjaGl0ZWN0dXJlJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60');
+  background-image: url('/images/2.jpg');
+  /* background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjaGl0ZWN0dXJlJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60'); */
 }
 
 .logo-text {
-  font-family: 'BankGothic-Medium', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Vision-Medium', sans-serif;
+  /* font-family: 'BankGothic-Medium', sans-serif; */
 }
 
 .slick-slide > div {
@@ -89,4 +146,58 @@ html {
 }
 .slick-list {
   margin: 0 -10px;
+}
+
+.banner-header {
+  background-image: url('/images/banner.jpg');
+  height: 30vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: -2;
+  position: relative;
+  background-attachment: scroll !important;
+}
+
+.banner-img:after {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  left: 0;
+  content: '';
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 100%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.8) 100%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  object-fit: cover;
+}
+
+[data-overlay-dark='5']:before,
+[data-overlay-darkgray='5']:before,
+[data-overlay-light='5']:before {
+  opacity: 0;
+}
+
+[data-overlay-darkgray]:before {
+  background: #fff;
+}
+[data-overlay-dark]:before,
+[data-overlay-darkgray]:before,
+[data-overlay-light]:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }

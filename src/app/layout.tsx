@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NextTopLoader />
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         <ScrollToTop />
       </body>
     </html>
