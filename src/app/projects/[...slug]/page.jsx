@@ -174,6 +174,10 @@ const Project = async ({ params }) => {
           ) : (
             ''
           )}
+
+          <div className='container mx-auto text-right my-16'>
+            <Share></Share>
+          </div>
         </main>
       </>
     );

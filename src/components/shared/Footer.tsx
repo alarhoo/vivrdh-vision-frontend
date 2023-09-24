@@ -147,7 +147,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='py-10 text-center md:text-left w-4/5 md:w-11/12 mx-auto'>
+      {/* <div className='py-10 text-center md:text-left w-4/5 md:w-11/12 mx-auto'>
         <div className='grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-24'>
           <div className=''>
             <h6
@@ -256,7 +256,44 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <form action='' className='mt-6'>
+        <div className='gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3'>
+          <div className='md:mb-6 md:ml-auto'>
+            <p className='text-secondary-800'>
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+
+          <div className='relative md:mb-6' data-te-input-wrapper-init>
+            <input
+              type='text'
+              className='peer block min-h-[auto] w-full rounded border-slate-400 border bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0'
+              id='exampleFormControlInput1'
+              placeholder='Email address'
+            />
+            <label
+              htmlFor='exampleFormControlInput1'
+              className='pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-secondary-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-secondary-400 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none'
+            >
+              Email address
+            </label>
+          </div>
+
+          <div className='mb-6 md:mr-auto'>
+            <button
+              type='button'
+              className='inline-block rounded logo-bg-color px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600s hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600s focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700s active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]'
+              data-te-ripple-init
+              data-te-ripple-color='light'
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+
       <div className='text-center p-6 bg-gray-200'>
         <div>© {year} Copyright, Vision Creations</div>
         <a className='text-gray-500 text-sm font-normal underline' href='https://vivrdh.com/' title='Vivrdh'>

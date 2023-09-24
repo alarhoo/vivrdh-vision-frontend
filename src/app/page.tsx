@@ -7,6 +7,8 @@ import ProjectSection from '@/components/home/ProjectSection';
 import TestimonialSection from '@/components/home/TestimonialSection';
 import SubscribeSection from '@/components/home/SubscribeSection';
 import { Metadata } from 'next';
+import ContactSection from '@/components/home/ContactSection';
+import FAQSection from '@/components/home/FAQSection';
 
 export const metadata: Metadata = {
   title: 'Vision Creations',
@@ -27,7 +29,8 @@ export default function Home() {
       <HowWeWorkSection />
       <ProjectSection />
       <TestimonialSection />
-      <SubscribeSection />
+      <FAQSection />
+      <ContactSection />
     </main>
   );
 }

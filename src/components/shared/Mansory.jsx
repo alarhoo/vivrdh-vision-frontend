@@ -9,14 +9,13 @@ const Mansory = ({ project }) => {
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
       <Masonry gutter='10px'>
         {project.gallery.data.map((item, i) => {
-          console.log(item);
           return (
             <Image
               key={i}
               className='transition-shadows shadow-none'
               src={getStrapiMedia(item.attributes.url)}
               data-te-img={getStrapiMedia(item.attributes.url)}
-              alt={item.attributes.alternativeText}
+              alt={item.attributes.alternativeText ? item.attributes.alternativeText : 'Vision Project Image Gallery'}
               width='1920'
               height='1080'
             />

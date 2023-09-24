@@ -94,7 +94,7 @@ const TestimonialSection = () => {
 
   return (
     <section className='h-screens py-16 bg-slate-50'>
-      <div className='w-4/5 md:w-11/12 mx-auto'>
+      <div className='container mx-auto'>
         <h2 className='logo-text text-4xl uppercase tracking-widest mb-16'>
           What our <span className='logo-color'>clients&apos; Say?</span>{' '}
         </h2>

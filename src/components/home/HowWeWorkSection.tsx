@@ -4,7 +4,7 @@ import React from 'react';
 
 const HowWeWorkSection = () => {
   return (
-    <section className='h-screens py-24'>
+    <section id='services-section' className='h-screens py-24'>
       <div className='container mx-auto'>
         <h2 className='logo-text text-4xl uppercase tracking-widest mb-8'>
           Our <span className='logo-color'>Services</span>{' '}

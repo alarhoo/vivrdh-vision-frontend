@@ -12,7 +12,7 @@ const HeroSection = (props: Props) => {
     <section>
       <div className='flex items-center justify-center h-screen bg-fixed bg-cover bg-center custom-img'>
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]' />
-        <div className='p-5 text-white z-[2] w-3/4'>
+        <div className='container mx-auto p-5 text-white z-[2] sw-3/4'>
           <h2
             className='text-3xl md:text-4xl font-normal tracking-[5px] uppercase'
             data-te-animation-init

@@ -7,8 +7,15 @@
       "default",
       {
         "ignore": [
-          "iframe[allow]"
+          "iframe[allow]",
+          "iframe[loading]"
         ]
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
       }
     ]
   }
