@@ -6,7 +6,7 @@ const HowWeWorkSection = () => {
   return (
     <section id='services-section' className='h-screens py-24'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest mb-8'>
+        <h2 className='header-text text-4xl uppercase tracking-widest mb-8'>
           Our <span className='logo-color'>Services</span>{' '}
         </h2>
         <div className='flex flex-col md:flex-row gap-6s'>

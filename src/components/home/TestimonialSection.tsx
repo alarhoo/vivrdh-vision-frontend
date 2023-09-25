@@ -95,7 +95,7 @@ const TestimonialSection = () => {
   return (
     <section className='h-screens py-16 bg-slate-50'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest mb-16'>
+        <h2 className='header-text text-4xl uppercase tracking-widest mb-16'>
           What our <span className='logo-color'>clients&apos; Say?</span>{' '}
         </h2>
         <Slider {...settings}>{testimonialsHTML}</Slider>

@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <section id='contact-section' className='py-12'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest my-8'>
+        <h2 className='header-text text-4xl uppercase tracking-widest my-8'>
           Contact <span className='logo-color'>Us</span>
         </h2>
         <div className='container'>

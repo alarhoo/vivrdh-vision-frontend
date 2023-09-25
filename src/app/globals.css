@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --brand-color: #003270;
-  /* --brand-color: #b19777; */
+  /* --brand-color: #003270; */
+  --brand-color: #b19777;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
@@ -136,9 +136,11 @@ header {
 }
 
 .logo-text {
-  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'BankGothic-Medium', sans-serif;
+}
+
+.header-text {
   font-family: 'Vision-Medium', sans-serif;
-  /* font-family: 'BankGothic-Medium', sans-serif; */
 }
 
 .slick-slide > div {

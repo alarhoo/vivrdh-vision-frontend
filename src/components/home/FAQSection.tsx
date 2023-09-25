@@ -3,7 +3,7 @@ import React from 'react';
 const FAQSection = () => {
   const faqData = [
     {
-      question: 'What does your architecture firm specialize in?',
+      question: 'What does our architecture firm specialize in?',
       answer:
         'Our firm specializes in a wide range of architectural services, including residential, commercial, and institutional projects. We have extensive experience in designing everything from homes and offices to schools and healthcare facilities.',
     },
@@ -42,13 +42,13 @@ const FAQSection = () => {
             className='group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] darks:[&:not([data-te-collapse-collapsed])]:text-primary-400'
             type='button'
             data-te-collapse-init
-            data-te-collapse-collapsed={i === 0 ? false : true}
+            data-te-collapse-collapsed
             data-te-target={`#flush-collapse-${i}`}
             aria-expanded='false'
             aria-controls={`flush-collapse-${i}`}
           >
             {item.question}
-            <span className='ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#003270] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none darks:fill-[#8FAEE0] darks:group-[[data-te-collapse-collapsed]]:fill-[#eee]'>
+            <span className='ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-primary transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none darks:fill-[#8FAEE0] darks:group-[[data-te-collapse-collapsed]]:fill-[#eee]'>
               <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'>
                 <path
                   fill-rule='evenodd'
@@ -62,7 +62,6 @@ const FAQSection = () => {
           id={`flush-collapse-${i}`}
           className='!visible border-0'
           data-te-collapse-item
-          data-te-collapse-show={i === 0 ? true : false}
           aria-labelledby={`flush-collapse-${i}`}
           data-te-parent='#faqVisionAccordion'
         >
@@ -74,7 +73,7 @@ const FAQSection = () => {
   return (
     <section className='h-screens py-12 mb-12'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest my-8'>
+        <h2 className='header-text text-4xl uppercase tracking-widest my-8'>
           Frequently Asked <span className='logo-color'>Questions</span>
         </h2>
         <div className='container mx-auto'>

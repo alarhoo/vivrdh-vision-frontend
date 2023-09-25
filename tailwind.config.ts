@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#003270',
+        primary: '#b19777',
       },
     },
     safelist: [

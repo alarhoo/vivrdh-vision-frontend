@@ -110,12 +110,14 @@ const ProjectSection = () => {
   return (
     <section className='h-screens py-12 mb-12'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest my-10'>
-          Our <span className='logo-color'>Projects</span>
-        </h2>
-        <Link href={`/projects`} className='hidden text-center group-hover:inline-block text-5xl'>
-          <h3 className='text-xl tracking-wide my-3'>View All</h3>
-        </Link>
+        <div className='flex flex-col md:flex-row md:items-center justify-between mx-3'>
+          <h2 className='header-text text-4xl uppercase tracking-widest mt-10 mb-4 md:mb-10'>
+            Our <span className='logo-color'>Projects</span>
+          </h2>
+          <Link href={`/projects`}>
+            <h3 className='hover:underline hover:underline-offset-4 mb-10 md:mb-0'>View All</h3>
+          </Link>
+        </div>
 
         <div className='container'>
           <Slider {...settings}>{featured}</Slider>

@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id='about-section' className='bg-gray-50 py-32'>
       <div className='container mx-auto'>
-        <h2 className='logo-text text-4xl uppercase tracking-widest'>
+        <h2 className='header-text text-4xl uppercase tracking-widest'>
           About <span className='logo-color'>Vision</span>{' '}
         </h2>
         <div className='flex flex-col md:flex-row gap-2'>

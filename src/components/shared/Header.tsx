@@ -38,10 +38,10 @@ const Header = () => {
       >
         <div className='w-[inherit] mx-auto flex flex-wrap items-center justify-between p-3'>
           <Link href='/'>
-            {/* <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
-              VISION
-            </h1> */}
-            <Image src='/images/logo.jpg' width={200} height={40} alt='Vision Logo' priority={true} />
+            <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
+              Vision Creations
+            </h1>
+            {/* <Image src='/images/logo.jpg' width={200} height={40} alt='Vision Logo' priority={true} /> */}
           </Link>
           <button
             type='button'
@@ -114,10 +114,10 @@ const Header = () => {
           <div className='container mx-auto'>
             <div className='flex items-center justify-between p-4'>
               <Link href='/'>
-                {/* <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
-                  VISION
-                </h1> */}
-                <Image src='/images/logo.jpg' width={200} height={40} alt='Vision Logo' priority={true} />
+                <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
+                  Vision Creation
+                </h1>
+                {/* <Image src='/images/logo.jpg' width={200} height={40} alt='Vision Logo' priority={true} /> */}
               </Link>
               <button
                 type='button'

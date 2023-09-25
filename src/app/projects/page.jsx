@@ -15,7 +15,7 @@ const ProjectsPage = async () => {
     <main className='relativez'>
       <section className='container mx-auto'>
         <div className='my-36'>
-          <h1 className='logo-text text-4xl uppercase tracking-widest mb-3'>
+          <h1 className='header-text text-4xl uppercase tracking-widest mb-3'>
             Our <span className='logo-color'>Projects</span>{' '}
           </h1>
           <Projects data={projects} />
