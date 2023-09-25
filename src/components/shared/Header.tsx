@@ -39,7 +39,7 @@ const Header = () => {
         <div className='w-[inherit] mx-auto flex flex-wrap items-center justify-between p-3'>
           <Link href='/'>
             <h1 className={`text-2xl lg:text-4xl ${textColor} logo-text logo-color font-bold tracking-[5px]`}>
-              Vision Creations
+              Vision <span className='hidden md:inline-block'>Creations</span>
             </h1>
             {/* <Image src='/images/logo.jpg' width={200} height={40} alt='Vision Logo' priority={true} /> */}
           </Link>
